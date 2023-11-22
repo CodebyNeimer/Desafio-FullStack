@@ -48,7 +48,7 @@ export const RegisterForm = () => {
                 {...register("phone")}
                 error={errors.phone}
             />
-            <button type="submit">Register</button>
+            <button className="button-register" type="submit">Register</button>
         </form>
     )
 

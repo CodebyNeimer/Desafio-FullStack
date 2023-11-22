@@ -9,8 +9,8 @@ export const HomePage = () => {
                 <StyledContainer className="home-container">
                     <h1> Welcome to the this web application </h1>
                     <div>
-                        <Link to="/register">Register</Link>
-                        <Link to="/login">Login</Link>
+                        <Link className="link-button" to="/register">Register</Link>
+                        <Link className="link-button" to="/login">Login</Link>
                     </div>
                 </StyledContainer>
             </StyledHomePage>

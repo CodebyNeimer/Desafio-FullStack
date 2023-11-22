@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form"
+import { Input } from "../Input";
 
 export const LoginForm = () => {
     const { register, handleSubmit } = useForm()
@@ -9,15 +10,17 @@ export const LoginForm = () => {
 
     return (
         <form onSubmit={handleSubmit(submit)}>
-            <div>
-                <label>E-mail</label>
-                <input type="email" {...register("email")}/>
-            </div>
-            <div>
-                <label>Senha</label>
-                <input type="password" {...register("password")}/>
-            </div>
-            <button type="submit">Login</button>
+            <Input
+                type="email"
+                placeholder="Email"
+                {...register("email")}
+            />
+            <Input
+                type="text"
+                placeholder="Passowrd"
+                {...register("password")}
+            />
+            <button className="button-login" type="submit">Login</button>
         </form>
     )
 
